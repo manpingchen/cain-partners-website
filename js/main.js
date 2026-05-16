@@ -6,15 +6,31 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ----------------------------------------------------------
-     Header: add .is-scrolled class on scroll
+     Header: hide on scroll down, show on scroll up
      ---------------------------------------------------------- */
   const header = document.getElementById('site-header');
+  let lastY = window.scrollY;
+  let scrollUpStart = window.scrollY;
+  const SHOW_THRESHOLD = 120; // px scrolled up before header reappears
 
   const onScroll = () => {
-    header.classList.toggle('is-scrolled', window.scrollY > 60);
+    const y = window.scrollY;
+    const atTop = y <= 60;
+    const scrollingDown = y > lastY;
+
+    if (scrollingDown) {
+      scrollUpStart = y;
+    }
+
+    const scrolledUpEnough = (scrollUpStart - y) >= SHOW_THRESHOLD;
+
+    header.classList.toggle('is-scrolled', !atTop);
+    header.classList.toggle('is-hidden', !atTop && (scrollingDown || !scrolledUpEnough));
+
+    lastY = y;
   };
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll(); // run once on load
+  onScroll();
 
   /* ----------------------------------------------------------
      Parallax — wait for GSAP to load (it's deferred)

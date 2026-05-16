@@ -107,7 +107,7 @@ p {
   font-size: 0.9375rem;
   font-weight: 300;
   color: var(--clr-mid);
-  line-height: 1.85;
+  line-height: 1.5;
 }
 
 /* ------------------------------------------------------------
@@ -147,13 +147,18 @@ p {
 }
 
 .btn-primary {
-  background: var(--clr-dark);
-  color: var(--clr-white);
-  border: 1px solid var(--clr-dark);
+  padding: 0 0 0.45rem 0;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  color: var(--clr-dark);
+  transition: opacity var(--dur-fast);
+  width: fit-content;
 }
 .btn-primary:hover {
-  background: transparent;
-  color: var(--clr-dark);
+  opacity: 0.5;
 }
 
 .btn-ghost {
@@ -207,6 +212,7 @@ p {
   padding-block: 1.25rem;
   box-shadow: 0 0.5px 0 var(--clr-khaki-gold);
   transition:
+    transform 0.35s var(--ease-out),
     background var(--dur-mid) ease-in-out,
     padding var(--dur-mid) ease,
     box-shadow var(--dur-mid) ease;
@@ -217,6 +223,10 @@ p {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   padding-block: 0.9rem;
+}
+
+.site-header.is-hidden {
+  transform: translateY(-100%);
 }
 
 .nav-container {
@@ -390,10 +400,9 @@ p {
 }
 
 .footer-logo {
-  height: 28px;
+  height: 68px;
   width: auto;
   display: block;
-  margin-bottom: 0.5rem;
 }
 
 /* ------------------------------------------------------------
@@ -535,7 +544,7 @@ p {
 }
 
 .recruitment-right-stack__text {
-  width: 400px;
+  max-width: 39ch;
 }
 
 .recruitment-right-stack__text p + p {
@@ -725,6 +734,10 @@ p {
   align-items: start;
 }
 
+.candidates-text {
+  max-width: 500px;
+}
+
 .candidates-text h2 {
   margin-bottom: 1.5rem;
 }
@@ -873,7 +886,7 @@ p {
    ------------------------------------------------------------ */
 .site-footer {
   padding-block: 2rem;
-  background: var(--clr-dark);
+  background: #18332d;
 }
 
 .footer-inner {
@@ -890,7 +903,8 @@ p {
 
 .footer-nav {
   display: flex;
-  gap: 1.75rem;
+  gap: 0.25rem;
+  flex-direction: column;
 }
 .footer-nav a:hover {
   color: rgba(255, 255, 255, 0.75);
@@ -1041,7 +1055,7 @@ p {
     flex-direction: column;
   }
 
-  .recruitment-img--wide img{
+  .recruitment-img--wide img {
     height: unset;
   }
 
@@ -1050,20 +1064,7 @@ p {
   }
 
   .candidates-features {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-inner {
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
-  }
-
-  .footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    align-items: center;
+    display: none;
   }
 }
 
@@ -1112,12 +1113,6 @@ p {
    ------------------------------------------------------------ */
 @media (max-width: 1200px) {
   .footer-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 
   .footer-nav {
@@ -1131,6 +1126,30 @@ p {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto 0.5rem;
+  }
+}
 /* ------------------------------------------------------------
    Engagement Models
    ------------------------------------------------------------ */
@@ -1167,6 +1186,7 @@ p {
 @media (max-width: 600px) {
   .engagement-grid {
     grid-template-columns: 1fr;
+    margin-bottom: 5rem;
   }
 
   .engagement-card:last-child {
@@ -1309,11 +1329,25 @@ p {
 
   .exec-search__right {
     padding-block: var(--section-y);
+    padding: 5rem 2rem;
     margin-top: -5rem;
   }
 
   .exec-search__process {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .exec-search__layout {
+    gap: 5rem;
+  }
+
+  .exec-search__image {
+    width: 100%;
+    height: auto;
+    top: unset;
+    transform: unset;
   }
 }
 
