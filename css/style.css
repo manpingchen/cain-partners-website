@@ -347,7 +347,7 @@ p {
   position: fixed;
   inset: 0;
   background: var(--clr-dark);
-  z-index: 199;
+  z-index: 300;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -376,6 +376,22 @@ p {
 }
 .nav-overlay-links a:hover {
   opacity: 0.45;
+}
+
+.nav-overlay__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: var(--clr-white);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity var(--dur-fast);
+  padding: 0.5rem;
+}
+.nav-overlay__close:hover {
+  opacity: 1;
 }
 
 /* Logo — two versions swapped by scroll state */
@@ -902,12 +918,6 @@ p {
   background: #18332d;
 }
 
-.footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .footer-inner p {
   font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.45);
@@ -1096,13 +1106,8 @@ p {
    Photo Credit
    ------------------------------------------------------------ */
 
-.photo-credit p {
-  font-size: 0.72rem;
-  font-family: var(--font-serif);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--clr-bg-alt);
-  text-align: center;
+.photo-credit {
+  margin: 2rem 0;
 }
 /* ------------------------------------------------------------
    Footer extended
@@ -1110,7 +1115,7 @@ p {
 .footer-inner {
   display: grid;
   grid-template-columns: 1fr auto auto;
-  align-items: start;
+  align-items: flex-end;
   gap: 2rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -1126,6 +1131,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  align-items: flex-start;
 }
 
 .footer-contact a,
@@ -1148,8 +1154,6 @@ p {
    Footer — mobile overrides (must come after footer extended)
    ------------------------------------------------------------ */
 @media (max-width: 1200px) {
-  .footer-inner {
-  }
 
   .footer-nav {
     flex-wrap: wrap;
@@ -1157,9 +1161,6 @@ p {
     gap: 1rem 1.5rem;
   }
 
-  .footer-contact {
-    align-items: center;
-  }
 }
 
 @media screen and (max-width: 900px) {

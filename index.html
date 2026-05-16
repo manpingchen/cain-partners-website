@@ -94,17 +94,22 @@
           </button>
         </div>
       </nav>
-      <!-- Full nav overlay (toggled by hamburger) -->
-      <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
-        <ul class="nav-overlay-links" role="list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#sectors">Sectors</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#candidates">Candidates</a></li>
-          <li><a href="#" class="js-open-contact">Speak With Us</a></li>
-        </ul>
-      </div>
     </header>
+
+    <!-- Full nav overlay (toggled by hamburger) -->
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+      <button class="nav-overlay__close" id="nav-overlay-close" aria-label="Close navigation">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="4" x2="16" y2="16"/><line x1="16" y1="4" x2="4" y2="16"/></svg>
+      </button>
+      <ul class="nav-overlay-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#executive-search">Executive Search</a></li>
+        <li><a href="#sectors">Sectors</a></li>
+        <li><a href="#candidates">Candidates</a></li>
+        <li><a href="#" class="js-open-contact">Speak With Us</a></li>
+      </ul>
+    </div>
 
     <main>
       <!-- =====================
@@ -723,7 +728,7 @@
           <div class="footer-brand">
             <img src="assets/logos/horizontal-gold.svg" alt="Cain Partners" class="footer-logo" />
             <p class="footer-tagline">Executive Search for Luxury Hospitality.</p>
-            <p>
+            <p class="photo-credit">
               Photography by Rupert <span class="photo-credit__lastname"><!--last name TBD--></span>
             </p>
           </div>
