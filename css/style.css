@@ -908,6 +908,11 @@ p {
   justify-content: space-between;
 }
 
+.footer-inner p {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
 .footer-copy,
 .footer-nav a {
   font-size: 0.78rem;
@@ -1087,6 +1092,18 @@ p {
   }
 }
 
+/* ------------------------------------------------------------
+   Photo Credit
+   ------------------------------------------------------------ */
+
+.photo-credit p {
+  font-size: 0.72rem;
+  font-family: var(--font-serif);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clr-bg-alt);
+  text-align: center;
+}
 /* ------------------------------------------------------------
    Footer extended
    ------------------------------------------------------------ */
