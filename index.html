@@ -190,7 +190,7 @@
           </div>
         </div>
       </section>
-      
+
       <!-- =====================
          Core Services
          Discuss with client whether to collapse 2 or expand grid.
@@ -198,29 +198,85 @@
       <section class="services section js-fade" id="services">
         <div class="container">
           <h2 class="section-title">Core Services</h2>
-          <div class="services-grid services-grid--5">
-            <article class="service-card">
-              <h3>Executive Search</h3>
-              <p>Targeted retained search for senior and leadership-level appointments.</p>
-            </article>
-            <article class="service-card">
-              <h3>Strategic Hiring</h3>
+          <div class="carousel" data-carousel>
+            <div class="services-grid services-grid--5 carousel__track">
+              <article class="service-card">
+                <h3>Executive Search</h3>
+                <p>Targeted retained search for senior and leadership-level appointments.</p>
+              </article>
+              <article class="service-card">
+                <h3>Strategic Hiring</h3>
+                <p>
+                  Building high-performing teams for scaling hospitality and lifestyle businesses.
+                </p>
+              </article>
+              <article class="service-card">
+                <h3>Opening &amp; Launch Recruitment</h3>
+                <p>Recruitment support for new hotel, restaurant and members' club openings.</p>
+              </article>
+              <article class="service-card">
+                <h3>Confidential Talent Mapping</h3>
+                <p>Market intelligence and competitor talent mapping for ambitious brands.</p>
+              </article>
+              <article class="service-card">
+                <h3>Advisory Support</h3>
+                <p>
+                  Hiring strategy, organisational structure consultation and leadership planning.
+                </p>
+              </article>
+            </div>
+            <div class="carousel__controls">
+              <button class="carousel__btn carousel__btn--prev" aria-label="Previous">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="11 14 6 9 11 4" />
+                </svg>
+              </button>
+              <button class="carousel__btn carousel__btn--next" aria-label="Next">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="7 4 12 9 7 14" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+         Engagement Models
+    ===================== -->
+      <section class="engagement section js-fade" id="engagement">
+        <div class="container">
+          <p class="section-eyebrow">How We Work</p>
+          <div class="engagement-grid">
+            <div class="engagement-card">
+              <h3>Retained Search</h3>
               <p>
-                Building high-performing teams for scaling hospitality and lifestyle businesses.
+                For senior, specialist or confidential appointments and high-priority operational
+                and commercial hiring.
               </p>
-            </article>
-            <article class="service-card">
-              <h3>Opening &amp; Launch Recruitment</h3>
-              <p>Recruitment support for new hotel, restaurant and members' club openings.</p>
-            </article>
-            <article class="service-card">
-              <h3>Confidential Talent Mapping</h3>
-              <p>Market intelligence and competitor talent mapping for ambitious brands.</p>
-            </article>
-            <article class="service-card">
-              <h3>Advisory Support</h3>
-              <p>Hiring strategy, organisational structure consultation and leadership planning.</p>
-            </article>
+            </div>
+            <div class="engagement-card">
+              <h3>Embedded Recruitment Support</h3>
+              <p>Flexible recruitment partnership for scaling businesses.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -244,38 +300,75 @@
               We work closely with founders, boards, investors and leadership teams to secure
               individuals capable of driving operational excellence and long-term value creation.
             </p>
+            <div class="exec-search__ctas">
+              <button class="btn-underline js-open-mandates" aria-haspopup="dialog">
+                View Typical Mandates
+              </button>
+            </div>
           </div>
         </div>
 
         <div class="exec-search__process">
           <p class="exec-search__process-label">The Search Process</p>
-          <ol class="exec-search__steps">
-            <li class="exec-search__step">
-              <span class="exec-search__step-num">01</span>
-              <h4>Discovery &amp; Briefing</h4>
-              <p>Deep understanding of the business, culture and role requirements.</p>
-            </li>
-            <li class="exec-search__step">
-              <span class="exec-search__step-num">02</span>
-              <h4>Market Mapping</h4>
-              <p>Identification of relevant individuals across target businesses and sectors.</p>
-            </li>
-            <li class="exec-search__step">
-              <span class="exec-search__step-num">03</span>
-              <h4>Direct Approach</h4>
-              <p>Discreet outreach to carefully selected candidates.</p>
-            </li>
-            <li class="exec-search__step">
-              <span class="exec-search__step-num">04</span>
-              <h4>Assessment &amp; Shortlisting</h4>
-              <p>Detailed evaluation of capability, leadership style and cultural alignment.</p>
-            </li>
-            <li class="exec-search__step">
-              <span class="exec-search__step-num">05</span>
-              <h4>Offer &amp; Transition</h4>
-              <p>Support through negotiation, onboarding and successful integration.</p>
-            </li>
-          </ol>
+          <div class="carousel" data-carousel>
+            <ol class="exec-search__steps carousel__track">
+              <li class="exec-search__step">
+                <span class="exec-search__step-num">01</span>
+                <h4>Discovery &amp; Briefing</h4>
+                <p>Deep understanding of the business, culture and role requirements.</p>
+              </li>
+              <li class="exec-search__step">
+                <span class="exec-search__step-num">02</span>
+                <h4>Market Mapping</h4>
+                <p>Identification of relevant individuals across target businesses and sectors.</p>
+              </li>
+              <li class="exec-search__step">
+                <span class="exec-search__step-num">03</span>
+                <h4>Direct Approach</h4>
+                <p>Discreet outreach to carefully selected candidates.</p>
+              </li>
+              <li class="exec-search__step">
+                <span class="exec-search__step-num">04</span>
+                <h4>Assessment &amp; Shortlisting</h4>
+                <p>Detailed evaluation of capability, leadership style and cultural alignment.</p>
+              </li>
+              <li class="exec-search__step">
+                <span class="exec-search__step-num">05</span>
+                <h4>Offer &amp; Transition</h4>
+                <p>Support through negotiation, onboarding and successful integration.</p>
+              </li>
+            </ol>
+            <div class="carousel__controls">
+              <button class="carousel__btn carousel__btn--prev" aria-label="Previous">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="11 14 6 9 11 4" />
+                </svg>
+              </button>
+              <button class="carousel__btn carousel__btn--next" aria-label="Next">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="7 4 12 9 7 14" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -286,42 +379,127 @@
         <div class="container">
           <div class="sectors-inner">
             <h2 class="section-title">Sectors We Work In</h2>
-            <ul class="sectors-list" role="list">
-              <li>
-                <span class="sector-name">Luxury Hotels</span>
-                <span class="sector-desc"
-                  >Boutique hotels, global hospitality groups, resorts and lifestyle hospitality
-                  concepts.</span
-                >
-              </li>
-              <li>
-                <span class="sector-name">Private Members&rsquo; Clubs</span>
-                <span class="sector-desc"
-                  >High-end clubs, modern social clubs and premium experiential venues.</span
-                >
-              </li>
-              <li>
-                <span class="sector-name">Fine Dining &amp; Restaurants</span>
-                <span class="sector-desc"
-                  >Michelin-starred groups, celebrity-led concepts and growth-stage restaurant
-                  brands.</span
-                >
-              </li>
-              <li>
-                <span class="sector-name">Lifestyle &amp; Leisure</span>
-                <span class="sector-desc"
-                  >Wellness brands, luxury fitness, experiential concepts and premium consumer
-                  businesses.</span
-                >
-              </li>
-              <li>
-                <span class="sector-name">Venture-Backed Hospitality</span>
-                <span class="sector-desc"
-                  >Founders and operators building the next generation of hospitality
-                  businesses.</span
-                >
-              </li>
-            </ul>
+            <div class="carousel" data-carousel>
+              <ul class="sectors-list carousel__track" role="list">
+                <li>
+                  <span class="sector-name">Luxury Hotels</span>
+                  <span class="sector-desc"
+                    >Boutique hotels, global hospitality groups, resorts and lifestyle hospitality
+                    concepts.</span
+                  >
+                </li>
+                <li>
+                  <span class="sector-name">Private Members&rsquo; Clubs</span>
+                  <span class="sector-desc"
+                    >High-end clubs, modern social clubs and premium experiential venues.</span
+                  >
+                </li>
+                <li>
+                  <span class="sector-name">Fine Dining &amp; Restaurants</span>
+                  <span class="sector-desc"
+                    >Michelin-starred groups, celebrity-led concepts and growth-stage restaurant
+                    brands.</span
+                  >
+                </li>
+                <li>
+                  <span class="sector-name">Lifestyle &amp; Leisure</span>
+                  <span class="sector-desc"
+                    >Wellness brands, luxury fitness, experiential concepts and premium consumer
+                    businesses.</span
+                  >
+                </li>
+                <li>
+                  <span class="sector-name">Venture-Backed Hospitality</span>
+                  <span class="sector-desc"
+                    >Founders and operators building the next generation of hospitality
+                    businesses.</span
+                  >
+                </li>
+              </ul>
+              <div class="carousel__controls">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Previous">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="11 14 6 9 11 4" />
+                  </svg>
+                </button>
+                <button class="carousel__btn carousel__btn--next" aria-label="Next">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="7 4 12 9 7 14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================
+         Client Logos
+    ===================== -->
+      <section class="logos section js-fade" aria-label="Client logos">
+        <div class="container">
+          <p class="logos-eyebrow">Trusted by leading luxury hospitality &amp; lifestyle brands</p>
+          <div class="logos-grid" role="list">
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 1.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 6.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 7.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 8.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 9.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 11.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 12.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 13.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 14.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 15.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 16.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 17.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 18.png" alt="Client logo" loading="lazy" />
+            </div>
+            <div class="logo-item js-fade" role="listitem">
+              <img src="assets/clients/image 19.png" alt="Client logo" loading="lazy" />
+            </div>
           </div>
         </div>
       </section>
@@ -342,40 +520,70 @@
       <section class="why-us section js-fade" id="why-us">
         <div class="container">
           <h2 class="section-title">Why Clients Work With Us</h2>
-          <div class="why-grid">
-            <article class="why-card">
-              <h3>Deep Industry Network</h3>
-              <p>
-                We maintain relationships with some of the most respected operators, founders and
-                hospitality leaders in the market.
-              </p>
-            </article>
-            <article class="why-card">
-              <h3>Quality Over Volume</h3>
-              <p>
-                We prioritise precision, fit and long-term value over transactional recruitment.
-              </p>
-            </article>
-            <article class="why-card">
-              <h3>Discretion &amp; Trust</h3>
-              <p>
-                Many of our assignments are confidential and handled with complete professionalism.
-              </p>
-            </article>
-            <article class="why-card">
-              <h3>Commercial Understanding</h3>
-              <p>
-                We understand the realities of scaling hospitality businesses — operationally,
-                culturally and financially.
-              </p>
-            </article>
-            <article class="why-card">
-              <h3>Founder-Friendly Approach</h3>
-              <p>
-                We work particularly well with ambitious founders, growth-stage brands and
-                investor-backed businesses.
-              </p>
-            </article>
+          <div class="carousel" data-carousel>
+            <div class="why-grid carousel__track">
+              <article class="why-card">
+                <h3>Quality Over Volume</h3>
+                <p>
+                  We prioritise precision, fit and long-term value over transactional recruitment.
+                </p>
+              </article>
+              <article class="why-card">
+                <h3>Deep Industry Network</h3>
+                <p>
+                  We maintain relationships with some of the most respected operators, founders and
+                  hospitality leaders in the market.
+                </p>
+              </article>
+              <article class="why-card">
+                <h3>Discretion &amp; Trust</h3>
+                <p>
+                  Many of our assignments are confidential and handled with complete
+                  professionalism.
+                </p>
+              </article>
+              <article class="why-card">
+                <h3>Founder-Friendly Approach</h3>
+                <p>
+                  We work particularly well with ambitious founders, growth-stage brands and
+                  investor-backed businesses.
+                </p>
+              </article>
+              <article class="why-card">
+                <h3>International Reach</h3>
+                <p>Our network extends across key global hospitality markets.</p>
+              </article>
+            </div>
+            <div class="carousel__controls">
+              <button class="carousel__btn carousel__btn--prev" aria-label="Previous">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="11 14 6 9 11 4" />
+                </svg>
+              </button>
+              <button class="carousel__btn carousel__btn--next" aria-label="Next">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="7 4 12 9 7 14" />
+                </svg>
+              </button>
+            </div>
           </div>
 
           <!-- Featured Quote -->
@@ -429,44 +637,13 @@
       </section>
 
       <!-- =====================
-         Our Approach
-         NOTE: Client doc has 4 points here and a slightly different
-         2-point version in the homepage. Using the fuller 4-point version.
-    ===================== -->
-      <section class="approach section js-fade" id="approach">
-        <div class="container">
-          <h2 class="section-title">Our Approach</h2>
-          <div class="approach-grid">
-            <article class="approach-card">
-              <h3 class="approach-label">Consultative</h3>
-              <p>Every search begins with understanding the business, not simply the vacancy.</p>
-            </article>
-            <article class="approach-card">
-              <h3 class="approach-label">Curated</h3>
-              <p>
-                We target individuals specifically aligned with the role, culture and long-term
-                vision.
-              </p>
-            </article>
-            <article class="approach-card">
-              <h3 class="approach-label">Relationship-Led</h3>
-              <p>We build long-term relationships with both clients and candidates.</p>
-            </article>
-            <article class="approach-card">
-              <h3 class="approach-label">International</h3>
-              <p>Our network extends across key global hospitality markets.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================
          Candidates
     ===================== -->
       <section class="candidates section js-fade" id="candidates">
         <div class="container">
           <div class="candidates-grid">
             <div class="candidates-text">
+              <p class="section-eyebrow">Candidates</p>
               <h2>Careers Within the World's Leading Hospitality &amp; Luxury Brands.</h2>
               <p>
                 We represent ambitious professionals across hospitality, lifestyle and luxury
@@ -510,38 +687,6 @@
       </section>
 
       <!-- =====================
-         Client Logos
-    ===================== -->
-      <section class="logos section js-fade" aria-label="Client logos">
-        <div class="container">
-          <p class="logos-eyebrow">Trusted by leading luxury hospitality &amp; lifestyle brands</p>
-          <div class="logos-grid" role="list">
-            <div class="logo-item" role="listitem">
-              <img src="assets/logos/logo-1.png" alt="Client logo" loading="lazy" />
-            </div>
-            <div class="logo-item" role="listitem">
-              <img src="assets/logos/logo-2.png" alt="Client logo" loading="lazy" />
-            </div>
-            <div class="logo-item" role="listitem">
-              <img src="assets/logos/logo-3.png" alt="Client logo" loading="lazy" />
-            </div>
-            <div class="logo-item" role="listitem">
-              <img src="assets/logos/logo-4.png" alt="Client logo" loading="lazy" />
-            </div>
-            <div class="logo-item" role="listitem">
-              <img src="assets/logos/logo-5.png" alt="Client logo" loading="lazy" />
-            </div>
-            <div class="logo-item" role="listitem">
-              <img src="assets/logos/logo-6.png" alt="Client logo" loading="lazy" />
-            </div>
-            <div class="logo-item" role="listitem">
-              <img src="assets/logos/logo-7.png" alt="Client logo" loading="lazy" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================
          Contact CTA
     ===================== -->
       <section class="contact section" aria-label="Contact">
@@ -553,7 +698,7 @@
         <div class="contact__overlay" aria-hidden="true"></div>
         <div class="container">
           <div class="contact__inner js-fade">
-            <h2>Building Something Exceptional?</h2>
+            <h2>Start the Conversation.</h2>
             <p>
               Whether you are hiring leadership talent, building an opening team or exploring your
               next move within luxury hospitality, we would welcome a confidential conversation.
@@ -588,7 +733,7 @@
             >
           </nav>
         </div>
-        <p class="footer-copy">&copy; 2024 Cain Partners. All rights reserved.</p>
+        <p class="footer-copy">&copy; 2026 Cain Partners. All rights reserved.</p>
       </div>
     </footer>
 
@@ -755,6 +900,154 @@
               class="contact-drawer__value"
               >LinkedIn</a
             >
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- =====================
+         Mandates Drawer
+      ===================== -->
+    <div class="contact-backdrop mandates-backdrop" id="mandates-backdrop" aria-hidden="true"></div>
+    <aside
+      class="contact-drawer mandates-drawer"
+      id="mandates-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Typical Mandates"
+    >
+      <button class="contact-drawer__close js-close-mandates" aria-label="Close">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        >
+          <line x1="4" y1="4" x2="16" y2="16" />
+          <line x1="16" y1="4" x2="4" y2="16" />
+        </svg>
+      </button>
+      <div class="contact-drawer__body">
+        <p class="contact-drawer__eyebrow">Executive Search</p>
+        <h2 class="contact-drawer__heading">Typical Mandates</h2>
+        <p class="mandates-intro">
+          A selection of the roles we are regularly retained to fill across luxury hospitality and
+          lifestyle sectors.
+        </p>
+
+        <div class="mandates-accordion">
+          <div class="mandates-group">
+            <button class="mandates-group__header" aria-expanded="false">
+              <span>C-Suite &amp; Leadership</span>
+              <svg
+                class="mandates-group__chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="4 6 8 10 12 6" />
+              </svg>
+            </button>
+            <div class="mandates-group__items">
+              <ul>
+                <li>Chief Executive Officers</li>
+                <li>Managing Directors</li>
+                <li>Operations Directors</li>
+                <li>Commercial Directors</li>
+                <li>People &amp; Culture Leadership</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mandates-group">
+            <button class="mandates-group__header" aria-expanded="false">
+              <span>Hospitality Operations</span>
+              <svg
+                class="mandates-group__chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="4 6 8 10 12 6" />
+              </svg>
+            </button>
+            <div class="mandates-group__items">
+              <ul>
+                <li>General Managers</li>
+                <li>Hotel Managers</li>
+                <li>Food &amp; Beverage Leadership</li>
+                <li>Membership Directors</li>
+                <li>Guest Experience Leadership</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mandates-group">
+            <button class="mandates-group__header" aria-expanded="false">
+              <span>Growth &amp; Commercial</span>
+              <svg
+                class="mandates-group__chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="4 6 8 10 12 6" />
+              </svg>
+            </button>
+            <div class="mandates-group__items">
+              <ul>
+                <li>Brand Directors</li>
+                <li>Marketing Leadership</li>
+                <li>Partnerships &amp; Membership Teams</li>
+                <li>Business Development Professionals</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mandates-group">
+            <button class="mandates-group__header" aria-expanded="false">
+              <span>Openings &amp; Expansion</span>
+              <svg
+                class="mandates-group__chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="4 6 8 10 12 6" />
+              </svg>
+            </button>
+            <div class="mandates-group__items">
+              <ul>
+                <li>Pre-opening Teams</li>
+                <li>Launch Leadership</li>
+                <li>Multi-site Growth Recruitment</li>
+                <li>International Expansion Support</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
