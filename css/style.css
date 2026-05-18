@@ -1463,7 +1463,7 @@ p {
   line-height: 1.15;
   color: var(--clr-dark);
   margin-bottom: 1.25rem;
-  max-width: 18ch;
+  max-width: 23ch;
 }
 
 .contact-drawer__intro {
