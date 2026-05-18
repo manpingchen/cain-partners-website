@@ -347,10 +347,13 @@ p {
   position: fixed;
   inset: 0;
   background: var(--clr-dark);
-  z-index: 300;
+  z-index: 400;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
+  padding: 3rem 2rem;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
@@ -364,11 +367,12 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.25rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
 .nav-overlay-links a {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
   font-weight: 300;
   color: var(--clr-white);
   letter-spacing: 0.03em;
@@ -376,6 +380,18 @@ p {
 }
 .nav-overlay-links a:hover {
   opacity: 0.45;
+}
+
+@media (max-height: 640px) {
+  .nav-overlay {
+    padding: 4rem 2rem 2rem;
+  }
+  .nav-overlay-links {
+    gap: 1.25rem;
+  }
+  .nav-overlay-links a {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+  }
 }
 
 .nav-overlay__close {
@@ -1154,13 +1170,11 @@ p {
    Footer — mobile overrides (must come after footer extended)
    ------------------------------------------------------------ */
 @media (max-width: 1200px) {
-
   .footer-nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem 1.5rem;
   }
-
 }
 
 @media screen and (max-width: 900px) {
