@@ -507,7 +507,7 @@ p {
 }
 
 .recruitment-heading h2 {
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(1.4rem, 5vw, 3rem);
   line-height: 1.15;
   max-width: 20ch;
   font-weight: 500;
