@@ -454,6 +454,15 @@ p {
   overflow: hidden;
 }
 
+.hero-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(12, 47, 34, 0.32) 0%, transparent 20%);
+
+  pointer-events: none;
+}
+
 .hero-image {
   position: absolute;
   inset: -15% 0;
@@ -705,7 +714,7 @@ p {
 .featured-quote p {
   font-family: var(--font-serif);
   font-size: clamp(1.2rem, 2vw, 1.6rem);
-  font-weight: 300;
+  font-weight: 500;
   font-style: italic;
   color: var(--clr-teal);
   line-height: 1.6;
@@ -825,6 +834,7 @@ p {
   color: var(--clr-teal);
   margin-bottom: 1.25rem;
   font-weight: 300;
+  line-height: 1.1;
 }
 
 /* ------------------------------------------------------------
@@ -1002,17 +1012,26 @@ p {
     width: 100%;
     height: 100%; /* override 100svh so it doesn't cover content below */
   }
+  .hero-image-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom, rgba(12, 47, 34, 0.32) 0%, transparent 20%),
+      linear-gradient(to top, rgba(0, 0, 0, 0.52) 0%, transparent 50%);
+    pointer-events: none;
+  }
 
   .hero-right {
     grid-template-columns: auto;
     position: absolute;
     background: transparent;
-    bottom: 15%;
+    bottom: 10%;
   }
 
   .hero-content {
     min-height: unset;
-    padding: 3rem 2rem 3rem;
+    padding: 3rem 10% 3rem;
     width: 100%;
   }
 
@@ -1095,6 +1114,10 @@ p {
   :root {
     --section-y: 3rem;
     --container-x: 1.25rem;
+  }
+
+  .hero-right {
+    bottom: 5%;
   }
 
   .recruitment-bottom {
