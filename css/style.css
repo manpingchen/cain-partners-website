@@ -612,7 +612,7 @@ p {
   font-family: var(--font-serif);
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--clr-dark);
+  color: var(--clr-teal);
   flex-shrink: 0;
   min-width: 20ch;
   line-height: 1.1;
@@ -645,7 +645,7 @@ p {
   font-family: var(--font-serif);
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--clr-dark);
+  color: var(--clr-teal);
   flex-shrink: 0;
   line-height: 1.5rem;
   height: 5ch;
@@ -691,6 +691,7 @@ p {
 .why-card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+  color: var(--clr-teal);
 }
 
 /* Featured Quote */
@@ -706,7 +707,7 @@ p {
   font-size: clamp(1.2rem, 2vw, 1.6rem);
   font-weight: 300;
   font-style: italic;
-  color: var(--clr-dark);
+  color: var(--clr-teal);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -810,6 +811,7 @@ p {
 
 .candidate-feature h4 {
   font-family: var(--font-serif);
+  color: var(--clr-teal);
   font-size: 1.15rem;
   font-weight: 400;
   margin-bottom: 0.6rem;
@@ -818,9 +820,9 @@ p {
 /* Lead text */
 .lead-text {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-style: italic;
-  color: var(--clr-dark);
+  color: var(--clr-teal);
   margin-bottom: 1.25rem;
   font-weight: 300;
 }
@@ -861,8 +863,7 @@ p {
   height: 80px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(1);
-  opacity: 0.65;
+  opacity: 0.85;
   transition: opacity var(--dur-fast);
 }
 .logo-item img:hover {
@@ -1226,7 +1227,7 @@ p {
   font-family: var(--font-serif);
   font-size: clamp(1.4rem, 2vw, 1.9rem);
   font-weight: 400;
-  color: var(--clr-dark);
+  color: var(--clr-teal);
   margin-bottom: 1rem;
 }
 
@@ -1475,7 +1476,7 @@ p {
 .contact-drawer__heading {
   font-size: clamp(1.8rem, 2.8vw, 2.6rem);
   line-height: 1.15;
-  color: var(--clr-dark);
+  color: var(--clr-teal);
   margin-bottom: 1.25rem;
   max-width: 23ch;
 }
