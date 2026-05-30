@@ -346,7 +346,10 @@ p {
 .nav-overlay {
   position: fixed;
   inset: 0;
-  background: var(--clr-dark);
+  background:
+    linear-gradient(rgba(5, 42, 34, 0.6) 20%, rgba(8, 45, 37, 0.9)),
+    url("../assets/images/brand-pattern.png") 40% center;
+  background-color: var(--clr-dark);
   z-index: 400;
   display: flex;
   flex-direction: column;
